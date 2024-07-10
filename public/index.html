@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/logoJaten.png" type="image/png" />
     <style>
       body {
         font-family: "Manrope", sans-serif;
@@ -30,13 +31,33 @@
       .btn-custom:hover {
         border: 2px solid white;
       }
+      .logo {
+        width: 65px; /* Ubah sesuai ukuran yang diinginkan */
+        height: auto;
+      }
+      .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+      }
+      .header-container img {
+        margin-right: 1rem;
+      }
+      .header-container h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body class="bg-gray-100 h-screen overflow-hidden">
     <!-- Main Content -->
     <div class="flex flex-col h-full">
       <!-- Navbar -->
-      <h1 class="text-center text-2xl font-bold my-3">Padukuhan Jaten.</h1>
+      <div class="header-container">
+        <h1>Padukuhan</h1>
+        <img src="img/logoJaten.png" alt="Logo Jaten" class="logo ml-2" />
+      </div>
       <div class="flex flex-col md:flex-row flex-grow">
         <!-- Dusun Jaten Section -->
         <div class="relative w-full md:w-1/2 bg-cover bg-center bg-dusun-jaten">
